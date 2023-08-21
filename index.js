@@ -1,4 +1,4 @@
-const io = require("socket.io")(8800, {
+const io = require("socket.io")(process.env.LIVE_SITE || 8800, {
   cors: {
     origin: process.env.SOCIAL_MEDIA_LINK || "http://localhost:3000",
   },
